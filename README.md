@@ -30,3 +30,15 @@ cd backend
 npm install
 # Tạo file .env từ file .env.example và điền thông tin PORT, MONGODB_URI
 npm start
+## IV. DOCKER DEPLOYMENT
+
+* **Backend Docker Hub Repository:** https://hub.docker.com/r/phungquocquy238120/backend
+* **Image Tag:** `phungquocquy238120/backend:latest`
+
+### Lệnh chạy Container Backend:
+```bash
+docker run -d -p 5000:5000 --name backend-app \
+  -e MONGODB_URI="<chuoi_ket_noi_mongodb_atlas>" \
+  -e PORT=5000 \
+   phungquocquy238120/backend:latest
+'''
