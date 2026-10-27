@@ -42,3 +42,20 @@ docker run -d -p 5000:5000 --name backend-app \
   -e PORT=5000 \
    phungquocquy238120/backend:latest
 '''
+## V. DOCKER DEPLOYMENT
+
+* **Backend Docker Hub Repository:** https://hub.docker.com/r/phungquocquy238120/backend
+* **Frontend Docker Hub Repository:** https://hub.docker.com/r/phungquocquy238120/frontend
+* **Image Tags:** `phungquocquy238120/backend:latest`, `phungquocquy238120/frontend:latest`
+
+### Lệnh chạy Container:
+```bash
+# 1. Khởi chạy Backend Container
+docker run -d -p 5000:5000 --name backend-app \
+  -e MONGODB_URI="<chuoi_ket_noi_mongodb_atlas>" \
+  -e PORT=5000 \
+  phungquocquy238120/backend:latest
+
+# 2. Khởi chạy Frontend Container
+docker run -d -p 8080:80 --name frontend-app \
+  phungquocquy238120/frontend:latest
