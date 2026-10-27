@@ -2,7 +2,7 @@
 
 ## I. THÔNG TIN SINH VIÊN
 - **Họ và tên:** Phùng Quốc Quy
-- **Mã số sinh viên (MSSV):** 
+- **Mã số sinh viên (MSSV):** 238120
 - **Lớp:** ĐH Điện toán Đám mây
 
 ---
